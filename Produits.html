@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>4BOIS Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/4bois1.jpeg"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <!-- <li><a href="">ACCUEIL</a></li> -->
+                    <li class="dropdown">
+                      <a href="#">ACCUEIL</a>
+                      <ul class="dropdown-content">
+                          <li><a href="#course">Description</a></li>
+                          <li><a href="#campus">Nos valeurs</a></li>
+                      </ul>
+                  </li>
+                    <li><a href="">À PROPOS</a></li>
+                    <li><a href="">PRODUITS</a></li>
+                    <li><a href="">LOCALISATION</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1>Découvrez nos produits</h1>
+    </section>
+
+<!-----------campus------------>
+<section class="campus" id="campus">
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/MDF1.png">
+            <p>MDF SONOMA</p>
+        </div>
+        <div class="campus-col">
+          <img src="images/MDF2.jpg">
+          <p>MDF K003</p>
+      </div>
+      <div class="campus-col">
+        <img src="images/MDF3.jpg">
+        <p>MDF K009</p>
+    </div>
+    </div>
+    
+    <div class="row">
+      <div class="campus-col">
+          <img src="images/MDF4.jpg">
+          <p>MDF L031</p>
+      </div>
+      <div class="campus-col">
+        <img src="images/MDF5.png">
+        <p>MDF L051</p>
+    </div>
+    <div class="campus-col">
+      <img src="images/MDF6.png">
+      <p>MDF TEAK</p>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/STRA1.jpg">
+            <p>STRATIFIE BLANC</p>
+        </div>
+        <div class="campus-col">
+          <img src="images/STRA2.jpg">
+          <p>STRATIFIE SONOMA</p>
+      </div>
+      <div class="campus-col">
+        <img src="images/STRA3.jpg">
+        <p>STRATIFIE ALIZEE</p>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/STRA4.png">
+            <p>STRATIFIE PATARA</p>
+        </div>
+        <div class="campus-col">
+          <img src="images/STRA5.jpg">
+          <p>STRATIFIE NOYER</p>
+      </div>
+      <div class="campus-col">
+        <img src="images/">
+        <p>LATTE LIFCASS</p>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/">
+            <p>LATTE CAMSAN</p>
+        </div>
+        <div class="campus-col">
+          <img src="images/">
+          <p>LATTE BLANC</p>
+      </div>
+      <div class="campus-col">
+        <img src="images/">
+        <p>HIGH GLOSS </p>
+    </div>
+    </div>
+    
+    
+</section>
+
+
+
+
+    
+    
+    
+    
+<!-------JavaScript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
+
+             
+</body>
+</html>  
