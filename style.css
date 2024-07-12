@@ -120,7 +120,40 @@ nav .fa{
     }
 }
 
-.course{
+
+/*-----valeurs----*/
+.valeur{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.valeur .valeur-img{
+    flex: 1;
+    border-radius: 3rem 0 3rem;
+    overflow: hidden;
+    text-align: right;
+}
+.valeur .valeur-img img{
+    max-width: 100%;
+    display: block;
+}
+
+.valeur .valeur-txt{
+    flex: 1;
+    padding: 0 2rem;
+    text-align: left;
+}
+.valeur .valeur-txt p{
+    font-size: 17px;
+    margin: 1rem 0;
+    line-height: 1.6; /* Ajout d'espace entre les lignes */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Police moderne */
+    color: #333; /* Couleur de texte moderne */
+}
+
+
+/*-----description----*/
+.description{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -137,70 +170,28 @@ p{
     line-height: 22px;
     padding: 10px;
 }
-
-
-.a-propos {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.a-propos .about-img {
-    flex: 1;
-    border-radius: 3rem 0 3rem;
-    overflow: hidden;
-    text-align: right;
-}
-
-.a-propos .about-img img {
-    max-width: 100%;
-    display: block;
-}
-
-.a-propos .about-text {
-    flex: 1;
-    padding: 0 2rem;
-    text-align: left;
-}
-
-.a-propos .about-text p {
-    font-size: 0.938rem;
-    margin: 1rem 0;
-}
-
-
-
-
-
-
-
-
-
-
 .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
     gap: 5px; 
 }
-.course-col{
+
+.description-col{
     flex-basis: 31%;
     background: #fee6e6;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
-
-
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-.course-col:hover{
+.description-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,2);
 }
 @media(max-width: 700px){
@@ -208,21 +199,23 @@ h3{
         flex-direction: column;
     }
 }
-/*------------campus-----------*/
-.campus{
+
+
+/*------------produits-----------*/
+.produits{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.campus-col{
+.produits-col{
     flex-basis: 60%;
     border-radius: 10px;
     margin-bottom: 8px;
     position: relative;
     overflow: hidden;
 }
-.campus-col img{
+.produits-col img{
     width: 95%;
     height: 200px;
 }
@@ -270,7 +263,7 @@ h3{
 .sub-header{
     height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/4bois17.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.533),rgba(4, 9, 30, 0.188)),url(images/4bois24.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -280,19 +273,22 @@ h3{
     margin-top: 100px;
 }
 .about-us{
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-right: 5%;
 }
 .about-col{
-    flex-basis: 31%;
+    flex-basis: 40%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
 .about-col img{
-    width: 100%;
+    width: 120%;
+    height: 350px;
     border-radius: 10px;
 }
 .about-col p{
@@ -303,3 +299,28 @@ h3{
     margin-bottom: 15px;
     text-align: left;
 }
+
+.about-us .row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/*----------contactez-nous page---------*/
+.localistaion{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.localisation iframe{
+
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 80%;
+}
+
+
